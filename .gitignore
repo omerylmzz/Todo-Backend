@@ -1,7 +1,7 @@
-# Derleme çıktıları
+# Build outputs
 bin/
 obj/
 
 
-# Yapılandırma dosyaları
+# Configuration files
 appsettings.Development.json

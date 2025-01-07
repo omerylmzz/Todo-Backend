@@ -1,0 +1,7 @@
+# Derleme çıktıları
+bin/
+obj/
+
+
+# Yapılandırma dosyaları
+appsettings.Development.json

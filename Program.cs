@@ -1,5 +1,9 @@
+using Marten;
+
 var builder = WebApplication.CreateBuilder(args);
 
+// Database connection
+builder.Services.AddMarten(builder.Configuration.GetConnectionString("DatabaseConnection")!);
 builder.Services.AddControllers();
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

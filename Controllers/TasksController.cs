@@ -45,6 +45,24 @@ public class TasksController : ControllerBase
         await _session.SaveChangesAsync();
         return Ok(task);
     }
+    // PATCH Request
+    [HttpPatch("{id:guid}")]
+    public async Task<IActionResult> UpdateTask(Guid id, [FromBody] string newContent)
+    {
+        var existingTask = await _session.LoadAsync<Models.Task>(id);
+        // Condition that checks whether there is data
+        if (existingTask == null) return NotFound();
+
+        if (newContent != null)
+        {
+            existingTask.Content = newContent;
+        }
+
+        _session.Store(existingTask);
+        // Updates object from SQL table
+        await _session.SaveChangesAsync();
+        return Ok(existingTask);
+    }
     // DELETE Request
     [HttpDelete("{id:guid}")]
     public async Task<IActionResult> DeleteTask(Guid id)

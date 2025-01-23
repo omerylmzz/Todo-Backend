@@ -39,7 +39,7 @@ This project aims to develop a fast, scalable, and easy-to-manage Todo Applicati
 Clone this repository
 
 ```bash
-git clone https://github.com/omerylmzz/Youdo-Backend.git
+git clone https://github.com/omerylmzz/Todo-Backend.git
 ```
 
 Install the dependencies
@@ -54,7 +54,11 @@ Open appsettings.Development file and organise it as follows
 
 ```env
 # Database Connection
-Host=localhost;Port=5432;Database={dbname};Username={dbusername};Password={dbpassword}"
+Host=localhost
+Port=5432
+Database=
+Username=
+Password=
 ```
 
 Build images of all services
@@ -165,3 +169,10 @@ http://localhost:8080/api/task/id
   "DESCRIPTION": "OK"
 }
 ```
+
+## Preview
+
+
+https://github.com/user-attachments/assets/7f5c0fe5-269f-4194-9f2a-fe17aeff25c3
+
+

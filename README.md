@@ -10,14 +10,12 @@ This project aims to develop a fast, scalable, and easy-to-manage Todo Applicati
 
 **Database:** PostgreSQL & Marten
 
-**Containerization:** Docker
-
-**Container Orchestration:** Docker Compose
+**Container:** Docker & Docker Compose
 
 ## Features
 
 - CRUD (Create, Read, Update, Delete) operations for RESTful API.
-- PostgreSQL database management using the [Marten](https://martendb.io) library.
+- PostgreSQL database management using the Marten library.
 - Easy setup and deployment with Docker and Docker Compose.
 - A modern and scalable backend architecture.
 
@@ -54,8 +52,8 @@ Open appsettings.Development file and organise it as follows
 
 ```env
 # Database Connection
-Host=localhost
-Port=5432
+Host=
+Port=
 Database=
 Username=
 Password=
@@ -82,6 +80,7 @@ The REST API to the example app is described below.
 | `/api/task`      | `POST`   | Create a new task           |
 | `/api/task`      | `GET`    | Display a list of all tasks |
 | `/api/task/{id}` | `GET`    | Display a specific task     |
+| `/api/task/{id}` | `PATCH` | Update a specific task      |
 | `/api/task/{id}` | `DELETE` | Delete a specific task      |
 
 ### Create a Task
@@ -151,6 +150,25 @@ http://localhost:8080/api/task/id
 }
 ```
 
+### Update Task
+
+#### Request
+
+`PATCH`
+
+```bash
+http://localhost:8080/api/task/id
+```
+
+#### Response
+
+```json
+{
+  "CODE": "200",
+  "DESCRIPTION": "OK"
+}
+```
+
 ### Delete Task
 
 #### Request
@@ -173,6 +191,10 @@ http://localhost:8080/api/task/id
 ## Preview
 
 
-https://github.com/user-attachments/assets/7f5c0fe5-269f-4194-9f2a-fe17aeff25c3
+
+
+https://github.com/user-attachments/assets/497bab27-fa55-496d-86a7-ffac43f2a9b2
+
+
 
 

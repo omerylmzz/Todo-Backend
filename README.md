@@ -1,6 +1,7 @@
 # Todo Back-End
 
-![Logo](https://i.hizliresim.com/dpukwfn.jpg)
+![Image](https://github.com/user-attachments/assets/4213c814-111b-46da-8b59-ff47c5e27ad6)
+
 
 This project aims to develop a fast, scalable, and easy-to-manage Todo Application Backend API using modern software development tools. Built with .NET 8 and integrated with PostgreSQL through the Marten library, this API is easily deployable and runnable thanks to Docker and Docker Compose. It provides a practical solution for developers looking to learn basic CRUD operations or seeking a starting point for similar projects.
 
